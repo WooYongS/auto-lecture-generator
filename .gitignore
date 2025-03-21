@@ -23,9 +23,15 @@ audios/*.mp3
 # 결과 영상
 output.mp4
 *.mp4
+*.mov
+*.mp3
+*.webp
+*.webm
 
 # 엑셀 캐시
 ~$*.xlsx
 
 # 로그 파일
 *.log
+
+

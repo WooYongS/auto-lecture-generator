@@ -4,6 +4,8 @@ pandas>=2.1.0
 python-dotenv>=1.0.0  # .env 파일에서 환경변수 로딩하고 싶을 때
 openpyxl>=3.1.2
 Pillow==9.5.0
+onnxruntime==latest
+subprocess==latest
 
 # moviepy==1.0.3: editor 모듈 존재 버전
 # Pillow==9.5.0: ANTIALIAS 문제 없는 안정 버전
