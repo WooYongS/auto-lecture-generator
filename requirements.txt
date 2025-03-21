@@ -1,0 +1,45 @@
+openai>=1.6.1
+moviepy>=1.0.3
+pandas>=2.1.0
+python-dotenv>=1.0.0  # .env 파일에서 환경변수 로딩하고 싶을 때
+openpyxl>=3.1.2
+Pillow==9.5.0
+
+# moviepy==1.0.3: editor 모듈 존재 버전
+# Pillow==9.5.0: ANTIALIAS 문제 없는 안정 버전
+# openpyxl: Excel 읽기용 (pandas가 내부적으로 사용)
+
+
+# openai	OpenAI TTS API 호출 (openai.audio.speech.create)
+# moviepy	이미지 + 오디오 → mp4 영상 제작
+# pandas	script.xlsx 읽고 슬라이드별 텍스트 처리
+# python-dotenv	.env 파일에서 OPENAI_API_KEY 불러오기 용도 (선택사항)
+
+
+# ✅ 추후 다른 환경에서 설치하는 전체 흐름
+# 1. Python 3.11.9 가상환경 생성
+# bash
+# 복사
+# 편집
+# python3.11 -m venv venv
+# source venv/bin/activate      # (Windows: venv\Scripts\activate)
+# 2. requirements.txt로 라이브러리 설치
+# bash
+# 복사
+# 편집
+# pip install -r requirements.txt
+# 3. .env 파일 준비
+# env
+# 복사
+# 편집
+# OPENAI_API_KEY=your-openai-api-key-here
+
+# ✅ 보너스: requirements.txt 자동 갱신 명령어
+# 지금 환경에서 설치된 모든 라이브러리 버전 기준으로 requirements.txt 만들고 싶다면:
+
+# bash
+# 복사
+# 편집
+# pip freeze > requirements.txt
+# 단, 이건 불필요한 dev/시스템 패키지까지 포함될 수 있으니 지금처럼 필요한 것만 명시하는 방식이 더 깔끔해요.
+
